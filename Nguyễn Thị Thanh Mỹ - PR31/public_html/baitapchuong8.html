@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>What the home page should look like</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-ico">
+        <meta name="viewport" content="width=decive-width, initial-scale=1"> 
+        <style>
+            body{margin-left:5em;border:1px solid black;}
+            #muc1 img{float: left; margin-right:2em;margin-left:2em;}
+            #muc2 ul{ list-style-type: none; position: relative;}
+            #muc2 ul li{float: left;}
+            #muc2 ul ul{position: absolute;display:none;top:100%;}
+            #muc2 ul ul li{float:none;}
+            #muc2 ul li:hover > ul{display:block;}
+            #muc2 >ul::after{conten:"";clear:both;display:block;}
+            #muc2 ul li{width:15%;}
+            #muc2{background-color:#800000;height:2em;color:white;text-align:center;padding-top:0.5em;padding-bottom:1em;}
+            #muc2 ul li a{text-align:center; color:white;background-color:#800000;width:25em;}
+            #muc2 ul ul{background-color:#800000;margin-top:1.5%;width:20em;}
+            #muc2 ul ul li {width:50%;margin-left:0;text-align:left;padding-top:2em;}
+            #phananh{width:25%;float:left;margin-left:2em;height:50em;}
+            #phannoidung{width:75%;height:50em;}
+            #phannoidung img{float:right;}
+            @media only screen and (max-width:767px){
+            #muc2 {display:none;}
+            #mobile_menu{display:block;}
+            body{border:1px solid black;margin-left:2em;margin-right:2em;}
+            #muc2{display:none;}
+            #phananh{display:none;}
+            #phannoidung img{display:none;}
+            body{margin-left:2em;margin-right:2em;width:90%;}
+            body{width:100%; margin:0;border:none;font-size:80%;}
+        </style>
+        
+            
+    </head>
+    <body>
+        <nav id="mobile_menu">_</nav>
+        <nav id="nav_menu">
+        <div id="muc1">
+        <img src="town_hall_logo.gif" width="100px">
+        <h1> San Joaquin Valley Town Hall </h1>
+        <h3> Celebrating our 75<sup>th</sup>Year</h3>
+        </div>
+        <div id="muc2">
+            <ul>
+                <li>Home</li>
+                <li>Speakers</li>
+                <li>Luncheons</li>
+                <li>Tickets</li>
+                <li>About Us
+                <ul>
+                    <li>Our History</li>
+                    <li>Board of Direction</li>
+                    <li>Past Speakers</li>
+                    <li>Contact Information</li>
+                </ul></li>
+            </ul><br>
+        </div>
+        <div id="phananh">
+            <h2>Guest speakers</h2>
+        <h3>October<br><u>Jeffrey Toobin</u></h3>
+        <img src="toobin75.jpg" width="50">
+        <h3>November<br><u>Andrew Ross Sorkin</u></h3>
+        <img src="sorkin75.jpg" width="50">
+        <h3>January<br><u>Amy Chua</u></h3>
+        <img src="sampson75.jpg" width="50">
+        <h3>February<br><u>Scott Sampson</u></h3>
+        <img src="tynan75.jpg" width="50"><br>
+        <u>Return to Home page</u>
+        </div>
+        <div id="phannoidung">
+        <h3>Our Mission</h3>
+        <p>San Joaquin Valley Town Hall is a non-profit organization that is run by an all-volunteer board of directions.
+            Our mission is to bring nationally and internationally renowned,thought-provoking speakers who inform,educate,
+            and entertain our audience!As one or our members told us:<br>
+                
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Each year I give a ticket package to each of our family members. I think of it as the gift of knowledge..
+                and that is priceless"</P>
+        <h2></h2>
+        <h3>Fossil Threads in the Web of Life</h3>
+        <img src="sampson_dinosaur.jpg" alt=""/>
+        <p><b>February Scott Sampson</b></p>
+        
+        <p> What's 75 million years old and brand spanking new? A teenage Utahceratops! Come to the Saroyan, armed
+        with your best dinasaur roar, when Scott Sampson, Research Curator at the Utah Museum of Natural History
+        steps to the podium. Sampson's research has focused on the ecology and evolution of late Cretaceous dinosaurs 
+        and he has conducted fieldwork in a number of countries in Africa.</p>
+        <hr>
+        <h2>Our Ticket Packages</h2>
+        <ul>
+            <li>Season Package: $95</li>
+            <li>Patron Package: $200</li>
+            <li>Single Speaker: $25</li>
+        </ul>
+        </div>
+        <footer style="background-color:#800000;text-align:center;height:2em;padding-top:1em;">
+         &copy;2018, San Joaquin  Valley Town Hall,Fresno,CA 93755
+        </footer>
+</html>

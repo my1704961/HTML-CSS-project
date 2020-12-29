@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style> 
+            #tieude{color:red; font-size:30px;font-weight:bold; text-align:center;}
+            .grid-container{display:grid;grid-template-columns:auto auto;grid-gap:-30px;}
+            label{float:left;
+                  text-align:right;
+                  margin-bottom:20px;
+                  width:100%}
+            input , textarea , select {margin-bottom:20px; margin-left:5em;}
+            input , select{width:250px;}
+            input , textarea , select {height:20px ; border: 1px solid gray ; box-shadow: gray 2px 2px;}
+            
+          
+            </style>
+    </head>
+    <body>
+        <p id="tieude">Đăng ký khóa học</p><br>
+        <hr style="width: 50%;">
+        <div class="grid-container">
+        <div>
+        <label for="hoten">Họ tên:*</label>
+        <label for="email">Email:*</label><br>
+        <label for="didong">Điện thoại:*</label><br>
+        <label for="khoahoc">Chọn khóa học:*</label><br>
+        <label for="loinhan">Lời Nhắn:*</label><br>
+        </div>
+        <div>
+        <input type="Text" id="hoten"><br>
+        <input type="email" id="email"><br>
+        <input type="tel" id="didong"><br>
+        <select style="width: 50%;">
+            <option value="khoahoc">Chọn khóa học</option>
+            <option value="android">Lập trình Android</option>
+            <option value="ios-swift">Lập trình iOS-Swift</option>
+            <option value="PHP">Lập trình PHP & SQL</option>
+            <option value="front-end">Lập trình Front-End</option>
+            <option value="kiemthu">Kiểm thử chuyên nghiệp</option>
+            <option value="java">Lập trình Java từ A-Z</option>
+            <option value="net">Lập trình .NET từ A-Z</option>
+            <option value="-----">___________________</option>
+            <option value="javacoban">Lập trình Java cơ bản</option>
+            <option value="javacaptoc">Lập trình Java cấp tốc</option>
+            <option value="Kysu">Kỹ sư cầu nối</option>
+        </select><br>
+        <textarea style="width: 50%;height:100px;"></textarea><br>
+        </div></div>
+        </body>
+</html>
